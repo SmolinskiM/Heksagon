@@ -452,7 +452,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hexagon: {fileID: 1493744438634497058, guid: db50aacf147d0a4449943f476453909f, type: 3}
-  line_renderer: {fileID: 0}
 --- !u!212 &196705258
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1273,7 +1272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score_curent: {fileID: -4754115504287163128, guid: ae224e54a8dbd5b4d8b79a63720c65b4,
     type: 3}
-  canvas: {fileID: 995062852}
+  dead_screen: {fileID: 995062852}
   is_alive: 1
 --- !u!114 &1552348082
 MonoBehaviour:
