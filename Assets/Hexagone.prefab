@@ -52,7 +52,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b3617367610210a408e2654176751668, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -149,6 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score_curent: {fileID: -4754115504287163128, guid: ae224e54a8dbd5b4d8b79a63720c65b4,
     type: 3}
+  material: {fileID: 0}
 --- !u!50 &1493744438634497071
 Rigidbody2D:
   serializedVersion: 4

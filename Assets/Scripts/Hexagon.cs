@@ -7,9 +7,13 @@ public class Hexagon : MonoBehaviour
     Rigidbody2D rb;
     public Score score_curent;
     float shrink_speed = 3f;
+    public Material material;
+    Color[] color = { Color.red, Color.yellow, Color.green, Color.blue, Color.magenta, Color.cyan};
 
     void Start()
     {
+        material = GetComponent<Renderer>().material;
+        material.SetColor("_EmissionColor", color[Random.Range(0, color.Length)]);
         rb = GetComponent<Rigidbody2D>();
         rb.rotation = Random.Range(0, 360);
         transform.localScale = Vector3.one * 9;
