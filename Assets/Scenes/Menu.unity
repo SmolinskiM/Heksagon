@@ -285,7 +285,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1571233307}
+      - m_Target: {fileID: 0}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -484,7 +484,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1571233307}
+      - m_Target: {fileID: 0}
         m_MethodName: Exit
         m_Mode: 1
         m_Arguments:
@@ -647,9 +647,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1571233302}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dca3f6d4259641d4b884403807f648d7, type: 3}
+  m_Script: {fileID: 11500000, guid: d3254601fea9d014c945e8f157095f5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  play: {fileID: 583569301}
+  quit: {fileID: 1333042349}
+  score: {fileID: 11400000, guid: 1662460d4a45f87439c3afd206b76a1f, type: 2}
 --- !u!1 &2040077729
 GameObject:
   m_ObjectHideFlags: 0

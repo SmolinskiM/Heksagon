@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Score : MonoBehaviour
+[CreateAssetMenu(fileName = "Score", menuName = "Score")]
+public class Score : ScriptableObject
 {
     public int score = 0;
 }

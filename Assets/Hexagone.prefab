@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1493744438634497057}
   - component: {fileID: 1493744438634497070}
   - component: {fileID: 1493744438634497071}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hexagone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,9 +147,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7199829fac5440f40bd73ac8764f6f1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score_curent: {fileID: -4754115504287163128, guid: ae224e54a8dbd5b4d8b79a63720c65b4,
-    type: 3}
   material: {fileID: 0}
+  scoreCurent: {fileID: 11400000, guid: 1662460d4a45f87439c3afd206b76a1f, type: 2}
 --- !u!50 &1493744438634497071
 Rigidbody2D:
   serializedVersion: 4
@@ -181,7 +180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1493744439148653887}
   - component: {fileID: 1493744439148653886}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

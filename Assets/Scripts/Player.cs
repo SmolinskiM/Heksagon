@@ -5,15 +5,16 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public Score score_curent;
-    float move_speed = 300;
-    float movement;
-    public Canvas dead_screen;
-    public bool is_alive = true;
+    public Score scoreCurent;
+    public bool isAlive = true;
+    
+    private float movement;
+    
+    private readonly float moveSpeed = 300;
 
     private void Start()
     {
-        score_curent.score = 0;
+        scoreCurent.score = 0;
     }
 
     void Update()
@@ -23,13 +24,12 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.RotateAround(Vector3.zero, Vector3.forward, movement * Time.fixedDeltaTime * -move_speed);
+        transform.RotateAround(Vector3.zero, Vector3.forward, movement * Time.fixedDeltaTime * -moveSpeed);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Time.timeScale = 0;
-        is_alive = false;
-        dead_screen.gameObject.SetActive(true);
+        isAlive = false;
     }
 }
