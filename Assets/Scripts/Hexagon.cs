@@ -10,6 +10,7 @@ public class Hexagon : MonoBehaviour
     private Rigidbody2D rb;
     private readonly float shrinkSpeed = 3f;
     private readonly Color[] color = { Color.red, Color.yellow, Color.green, Color.blue, Color.magenta, Color.cyan};
+    private int rotationSpeed;
 
     void Start()
     {
@@ -18,6 +19,7 @@ public class Hexagon : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.rotation = Random.Range(0, 360);
         transform.localScale = Vector3.one * 9;
+        rotationSpeed = Random.Range(-2, 3);
     }
 
     void Update()
@@ -26,7 +28,7 @@ public class Hexagon : MonoBehaviour
 
         if(scoreCurent.score >= 10)
         {
-            rb.rotation += Time.deltaTime * 50;
+            rb.rotation += Time.deltaTime * 50 * rotationSpeed;
         }
 
         if(transform.localScale.x <= 0.5)
